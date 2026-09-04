@@ -83,10 +83,10 @@ export default function Home() {
           {projects.map((project, index) => <article className={`project-card ${project.tone}`} key={project.name}>
             <div className="card-meta"><span>{project.type}</span><span>0{index + 1}</span></div>
             <div className="project-art"><div className="art-orb" /><div className="art-ui"><span>{project.symbol}</span><small>{project.copy}</small></div></div>
-            <div className="card-footer"><h2>{project.name}</h2><a href="#contact" aria-label={`See ${project.name} project`}>↗</a></div>
+            <div className="card-footer"><h2>{project.name}</h2><a aria-label={`See ${project.name} project`}>↗</a></div>
           </article>)}
         </div>
-        <a className="text-link" href="#contact">ALL PROJECTS <span>↗</span></a>
+        {/* <a className="text-link" href="#">ALL PROJECTS <span>↗</span></a> */}
       </section>
 
       <section className="about wrap" id="about">
